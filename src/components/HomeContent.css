@@ -1,0 +1,27 @@
+.animate{
+    animation:bouncing 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes bouncing{
+    0%{transform:translateY(10px);}
+    /* 50%{transform:translateY(-20px);} */
+    100%{transform:translateY(-10px);}
+  
+}
+
+.main_container{
+    display: flex;
+    justify-content: space-evenly;
+    height: 80vh;
+}
+
+.seaction_1{
+    align-self: center;
+    background-color: rgba(255, 255, 255,0.1);
+    box-shadow: 2px 2px 15px 3px grey;
+    text-shadow: 2px 2px #2c0808;
+}
+
+.seaction_2{
+    align-self: center;
+}
