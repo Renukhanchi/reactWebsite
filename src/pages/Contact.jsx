@@ -29,7 +29,7 @@ const Contact = () => {
     backgroundColor : "transparent",
     display:"flex",
     flexDirection : 'column',
-    width : '40vw',
+    // width : '40vw',
     height : '70vh',
     justifyContent : "center",
     color:"white",
@@ -56,33 +56,37 @@ const Contact = () => {
   return (
     <div  style={style2}>
       <form onSubmit={submitFunction}style={style}>
-      <label htmlFor="fullname">FullName</label>
+      <label htmlFor="fullname"  className='form-label'>FullName</label>
       <input type="text" 
+      class="form-control form-control-lg"
       id='fullname'
       name='fullname'
       value={data.fullname} 
       onChange={storeValue}
       style={inputstyle}/>
 
-      <label htmlFor="number">phone number</label>
+      <label htmlFor="number" className='form-label'>phone number</label>
       <input type="number" 
+      class="form-control form-control-lg"
       id='number' 
       name='number'
       value={data.number}
       onChange={storeValue}
       style={inputstyle}/>
 
-      <label htmlFor="email">Email</label>
+      <label htmlFor="email" className='form-label'>Email</label>
       <input type="email" 
+      class="form-control form-control-lg"
       id='email' 
       name='email' 
       value={data.email}
       onChange={storeValue}
       style={inputstyle}/>
 
-      <label htmlFor="message">Message</label>
+      <label htmlFor="message" className='form-label'>Message</label>
       <textarea id="message" cols="30" rows="10"
       placeholder='enter your message here' 
+      class="form-control form-control-lg"
       name="message"
       value={data.message}
       onChange={storeValue}

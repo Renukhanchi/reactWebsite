@@ -13,10 +13,10 @@ const HomeContent = (props) => {
   
   return (
     <>
-    <div className='main_container'>
+    <div className='main_container container'>
 
         <div className='seaction_2'>
-            <img src={imgsrc} alt=""  style={imageSet} className='animate'/>
+            <img src={imgsrc} alt=""  style={imageSet} className='animate img-fluid'/>
         </div>
 
         <div className='seaction_1'>
