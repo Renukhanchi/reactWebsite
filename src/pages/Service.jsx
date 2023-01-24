@@ -15,7 +15,7 @@ const [ post1, setPost1] = useState([])
 
   useEffect(()=>{
       axios
-          .get("https://api.tvmaze.com/search/shows?q=all")
+          .get("")
           .then((res) => {
             setPost1(res.data);
           })
