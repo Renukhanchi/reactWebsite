@@ -30,21 +30,20 @@ const ExpandMore = styled((props) => {
 
 export default function RecipeReviewCard(props) {
   const [expanded, setExpanded] = React.useState(false);
-  const topic = props.topic;
+  const {image} = props;
   const handleExpandClick = () => {
     setExpanded(!expanded);
   };
 
-  const style={
-    color:'white',
-  }
+ 
   return (
     <Card sx={{ maxWidth: 345,
      backgroundColor:"transparent",
      border:'2px solid white',
      marginBottom:'2rem' ,
      color:'white',
-     width:'30vw'
+     width:'30vw',
+   
      }}>
       <CardHeader
         avatar={
@@ -58,18 +57,18 @@ export default function RecipeReviewCard(props) {
           </IconButton>
         }
     
-        title={topic}
+        title='random image for example from api'
         subheader='jan1,2023'
       />
       <CardMedia
         component='img'
         height="194"
-        image={props.img}
+        image={image}
         alt="computer"
       />
       <CardContent>
         <Typography variant="body2" color="white">
-          some info about the topic.
+          api called with axios
         </Typography>
       </CardContent>
       <CardActions disableSpacing>

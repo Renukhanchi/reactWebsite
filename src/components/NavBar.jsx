@@ -15,29 +15,29 @@ const style ={
 
   return (
     <>
-    <nav class="navbar navbar-expand-lg " >
-    <div class="container-fluid d-flex mb-3">
+    <nav className="navbar navbar-expand-lg " >
+    <div className="container-fluid d-flex mb-3">
 
     <div className='d-flex me-auto p-2'>
-    <NavLink class="navbar-brand link-light flex-grow-1" to="/" style={style}>Logo</NavLink>
-    <button  class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span  class="navbar-toggler-icon bg-light"></span>
+    <NavLink className="navbar-brand link-light flex-grow-1" to="/" style={style}>Logo</NavLink>
+    <button  className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span  className="navbar-toggler-icon bg-light"></span>
     </button>
     </div>
 
-    <div class="collapse navbar-collapse p-2" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 " >
-        <li class="nav-item" >
-          <NavLink class="nav-link active  " aria-current="page" to="/" style={style}><HomeIcon/> home</NavLink>
+    <div className="collapse navbar-collapse p-2" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0 " >
+        <li className="nav-item" >
+          <NavLink className="nav-link active  " aria-current="page" to="/" style={style}><HomeIcon/> home</NavLink>
         </li>
-        <li class="nav-item">
-          <NavLink class="nav-link " to="/about" style={style}><InfoIcon/> about</NavLink>
+        <li className="nav-item">
+          <NavLink className="nav-link " to="/about" style={style}><InfoIcon/> about</NavLink>
         </li>
-        <li class="nav-item">
-          <NavLink class="nav-link " to="/service" style={style}><AssignmentIndIcon/> service</NavLink>
+        <li className="nav-item">
+          <NavLink className="nav-link " to="/service" style={style}><AssignmentIndIcon/> service</NavLink>
         </li>
-        <li class="nav-item">
-          <NavLink class="nav-link " to="/contact" style={style}><CallIcon/> contact</NavLink>
+        <li className="nav-item">
+          <NavLink className="nav-link " to="/contact" style={style}><CallIcon/> contact</NavLink>
         </li>
       </ul>
     </div>

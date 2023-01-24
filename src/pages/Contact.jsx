@@ -58,7 +58,7 @@ const Contact = () => {
       <form onSubmit={submitFunction}style={style}>
       <label htmlFor="fullname"  className='form-label'>FullName</label>
       <input type="text" 
-      class="form-control form-control-lg"
+      className="form-control form-control-lg"
       id='fullname'
       name='fullname'
       value={data.fullname} 
@@ -67,7 +67,7 @@ const Contact = () => {
 
       <label htmlFor="number" className='form-label'>phone number</label>
       <input type="number" 
-      class="form-control form-control-lg"
+      className="form-control form-control-lg"
       id='number' 
       name='number'
       value={data.number}
@@ -76,7 +76,7 @@ const Contact = () => {
 
       <label htmlFor="email" className='form-label'>Email</label>
       <input type="email" 
-      class="form-control form-control-lg"
+      className="form-control form-control-lg"
       id='email' 
       name='email' 
       value={data.email}
@@ -86,7 +86,7 @@ const Contact = () => {
       <label htmlFor="message" className='form-label'>Message</label>
       <textarea id="message" cols="30" rows="10"
       placeholder='enter your message here' 
-      class="form-control form-control-lg"
+      className="form-control form-control-lg"
       name="message"
       value={data.message}
       onChange={storeValue}
